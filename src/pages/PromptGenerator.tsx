@@ -34,11 +34,31 @@ const PromptGenerator = () => {
 
       if (error) throw error;
       
+      // Check if the response contains an error (e.g., rate limit)
+      if (data?.error) {
+        if (data.error.includes('Rate limit')) {
+          toast.error("OpenAI rate limit reached. Please wait a moment and try again.");
+        } else if (data.error.includes('credits') || data.error.includes('Insufficient')) {
+          toast.error("Insufficient OpenAI credits. Please add credits to your account.");
+        } else {
+          toast.error(data.error);
+        }
+        return;
+      }
+      
       setGeneratedPrompt(data.prompt);
       toast.success("Prompt generated successfully!");
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error generating prompt:', error);
-      toast.error("Failed to generate prompt. Please try again.");
+      
+      // Handle different error types
+      if (error?.message?.includes('429') || error?.context?.status === 429) {
+        toast.error("OpenAI rate limit reached. Please wait a moment and try again.");
+      } else if (error?.message?.includes('401')) {
+        toast.error("API authentication error. Please check configuration.");
+      } else {
+        toast.error("Failed to generate prompt. Please try again.");
+      }
     } finally {
       setIsLoading(false);
     }
