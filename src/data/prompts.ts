@@ -17,7 +17,7 @@ export const categories: Category[] = [
   {
     id: "developers",
     name: "Developers",
-    description: "Prompts for coding, debugging, and software development",
+    description: "debugging, and software development (best tool is Claude)",
     icon: "Code",
     prompts: [
       {
