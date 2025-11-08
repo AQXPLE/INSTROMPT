@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-3">
-            <h3 className="text-lg font-bold text-primary">AQXPLE</h3>
+            <h3 className="text-lg font-bold text-primary">Promptity</h3>
             <p className="text-muted-foreground text-sm">
               A space for better words and sharper thoughts.
             </p>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="mailto:contact@AQXPLE.com"
+                href="mailto:contact@promptity.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
@@ -65,7 +65,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border/50 text-center">
           <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} AQXPLE. All rights reserved.
+            © {new Date().getFullYear()} Promptity. All rights reserved.
           </p>
         </div>
       </div>

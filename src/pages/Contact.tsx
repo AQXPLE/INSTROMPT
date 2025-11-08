@@ -39,18 +39,18 @@ const Contact = () => {
             <div className="grid lg:grid-cols-3 gap-8 mb-12 animate-slide-up">
               {/* Contact Cards */}
               <a
-                href="mailto:hello@AQXPLE.com"
+                href="mailto:hello@promptity.com"
                 className="group p-6 rounded-lg border border-border bg-card hover:border-primary transition-all duration-300 hover:shadow-lg"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">Email Us</h3>
-                <p className="text-sm text-muted-foreground">hello@AQXPLE.com</p>
+                <p className="text-sm text-muted-foreground">hello@promptity.com</p>
               </a>
 
               <a
-                href="https://github.com/AQXPLE"
+                href="https://github.com/promptity"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-6 rounded-lg border border-border bg-card hover:border-primary transition-all duration-300 hover:shadow-lg"
@@ -59,11 +59,11 @@ const Contact = () => {
                   <Github className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">GitHub</h3>
-                <p className="text-sm text-muted-foreground">@AQXPLE</p>
+                <p className="text-sm text-muted-foreground">@promptity</p>
               </a>
 
               <a
-                href="https://twitter.com/AQXPLE"
+                href="https://twitter.com/promptity"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-6 rounded-lg border border-border bg-card hover:border-primary transition-all duration-300 hover:shadow-lg"
@@ -72,7 +72,7 @@ const Contact = () => {
                   <Twitter className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">Twitter</h3>
-                <p className="text-sm text-muted-foreground">@AQXPLE</p>
+                <p className="text-sm text-muted-foreground">@promptity</p>
               </a>
             </div>
 
@@ -130,7 +130,7 @@ const Contact = () => {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://twitter.com/AQXPLE"
+                        href="https://twitter.com/promptity"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 h-10 rounded-lg border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition-all"
@@ -138,7 +138,7 @@ const Contact = () => {
                         <Twitter className="h-4 w-4" />
                       </a>
                       <a
-                        href="https://github.com/AQXPLE"
+                        href="https://github.com/promptity"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 h-10 rounded-lg border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition-all"
@@ -146,7 +146,7 @@ const Contact = () => {
                         <Github className="h-4 w-4" />
                       </a>
                       <a
-                        href="https://linkedin.com/company/AQXPLE"
+                        href="https://linkedin.com/company/promptity"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 h-10 rounded-lg border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition-all"

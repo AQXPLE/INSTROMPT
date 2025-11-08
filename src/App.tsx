@@ -3,7 +3,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollRestoration from "@/components/ScrollRestoration";
 import Home from "./pages/Home";
 import Prompts from "./pages/Prompts";
 import CategoryPrompts from "./pages/CategoryPrompts";
@@ -20,7 +19,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollRestoration />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/prompts" element={<Prompts />} />

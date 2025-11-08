@@ -18,12 +18,9 @@ const Home = () => {
               <br />
               Not Longer Ones
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Your professional prompt library with categorized collections for developers, 
               researchers, designers, and more.
-            </p>
-            <p className="text-md sm:text-lg font-semibold text-primary mb-8 max-w-2xl mx-auto">
-              "Elevating AI interactions through precision and clarity"
             </p>
             <Link to="/prompts">
               <Button size="lg" className="group bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -38,7 +35,7 @@ const Home = () => {
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-border">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">
-              Why AQXPLE?
+              Why Promptity?
             </h2>
             <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
               Everything you need to master AI prompts in one place
@@ -139,10 +136,10 @@ const Home = () => {
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">
-              Who Uses AQXPLE?
+              Who Uses Promptity?
             </h2>
             <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-              Professionals across industries rely on AQXPLE to work smarter with AI
+              Professionals across industries rely on Promptity to work smarter with AI
             </p>
             
             <div className="grid md:grid-cols-2 gap-6">
