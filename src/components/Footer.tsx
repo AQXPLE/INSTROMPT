@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { Github, Mail, FileText, Wand2 } from "lucide-react";
+import { Github, Mail, FileText } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-card/50 backdrop-blur-lg border-t border-border/50 mt-20">
+    <footer role="contentinfo" className="bg-card/50 backdrop-blur-lg border-t border-border/50 mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-3">
@@ -45,19 +45,23 @@ const Footer = () => {
           <div className="space-y-3">
             <h4 className="text-sm font-semibold text-foreground">Connect</h4>
             <div className="flex gap-4">
-              <a 
-                href="https://github.com" 
-                target="_blank" 
+              <a
+                href="https://github.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Visit our GitHub"
+                title="GitHub"
               >
-                <Github className="h-5 w-5" />
+                <Github className="h-5 w-5" aria-hidden="true" />
               </a>
-              <a 
+              <a
                 href="mailto:contact@promptity.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Email us"
+                title="Email"
               >
-                <Mail className="h-5 w-5" />
+                <Mail className="h-5 w-5" aria-hidden="true" />
               </a>
             </div>
           </div>
